@@ -115,7 +115,9 @@ p {
 #about,
 #service,
 #experience,
+#projects,
 #education,
+#blog,
 #contact {
   position: relative;
 }
@@ -123,8 +125,10 @@ p {
 #home .container,
 #about .container, 
 #experience .container,
+#projects .container,
 #service .container,
 #education .container,
+#blog .container,
 #contact .container {
   width: 100%;
   padding: 0;
@@ -132,6 +136,8 @@ p {
 }
 
 #experience .experience-thumb,
+#projects .projects-thumb,
+#blog .blog-thumb,
 #education .education-thumb  {
   padding: 22px 42px 42px 42px;
 }
@@ -143,6 +149,8 @@ footer {
 }
 
 #experience,
+#projects,
+#blog,
 #education {
   background: #E9724C;
 }
@@ -484,6 +492,33 @@ a:hover, a:active, a:focus {
 }
 
 
+/*---------------------------------------
+   Blog section              
+-----------------------------------------*/
+
+#blog {
+  background: #E3AE57;
+}
+
+#blog .blog-img {
+  background: url('../images/blog-img.jpg') no-repeat;
+}
+
+#blog .media-heading {
+  margin-bottom: 0px;
+}
+
+#blog .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#blog small {
+  color: #886D1E;
+  font-weight: bold;
+}
+
+
 
 /*---------------------------------------
    Quotes section              
@@ -518,12 +553,37 @@ a:hover, a:active, a:focus {
 }
 
 
+
+
+/*---------------------------------------
+    Projects section              
+-----------------------------------------*/
+
+#projects .projects-img {
+  background: url('../images/projects-img.jpg') no-repeat;
+}
+
+#projects .media-heading {
+  margin-bottom: 0px;
+}
+
+#projects .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#projects small {
+  color: #633;
+  font-weight: bold;
+}
+
+
 /*---------------------------------------
     Contact section              
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  background: #f1e2d7;
 }
 
 #contact .contact-form,
@@ -673,6 +733,7 @@ footer {
   #home .container,
   #about .container, 
   #experience .container,
+  #projects .container,
   #service .container,
   #education .container,
   #contact .container {
@@ -682,6 +743,7 @@ footer {
 
   #about .col-md-3,
   #experience .col-md-6,
+  #projects .col-md-6,
   #education .col-md-6,
   #contact .col-md-3 {
     padding: 0;
@@ -702,4 +764,112 @@ footer {
   footer {
     padding: 40px 0;
   }
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.card-title {
+  margin-bottom: .75rem
+}
+
+.card-subtitle {
+  margin-top: -.375rem;
+  margin-bottom: 0
+}
+
+.card-text:last-child {
+  margin-bottom: 0
+}
+
+.card-link:hover {
+  text-decoration: none
+}
+
+.card-link+.card-link {
+  margin-left: 1.25rem
+}
+
+.card>.list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem
+}
+
+.card>.list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, .03);
+  border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+.card-header:first-child {
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0
+}
+
+.card-footer {
+  padding: .75rem 1.25rem;
+  background-color: rgba(0, 0, 0, .03);
+  border-top: 1px solid rgba(0, 0, 0, .125)
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px)
+}
+
+.card-header-tabs {
+  margin-right: -.625rem;
+  margin-bottom: -.75rem;
+  margin-left: -.625rem;
+  border-bottom: 0
+}
+
+.card-header-pills {
+  margin-right: -.625rem;
+  margin-left: -.625rem
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem
+}
+
+.card-img {
+  width: 100%;
+  border-radius: calc(.25rem - 1px)
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px)
+}
+
+.card-img-bottom {
+  width: 100%;
+  border-bottom-right-radius: calc(.25rem - 1px);
+  border-bottom-left-radius: calc(.25rem - 1px)
 }

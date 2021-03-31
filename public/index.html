@@ -15,9 +15,10 @@ Stimulus Template
 http://www.templatemo.com/tm-498-stimulus
 -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
+<!-- <link rel="stylesheet" href="css/animate.css"> -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/templatemo-style.css">
+<link rel="stylesheet" href="css/aos.css">
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
@@ -77,14 +78,16 @@ http://www.templatemo.com/tm-498-stimulus
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
-                              <h4 class="animated fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
-                              <h1 class="animated fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Rence Abishek,</strong> <br>Software Engineer.</h1>
-                              <p class="animated fadeInUp" data-wow-delay="0.9s">
+                              <h4 class="animated fadeInUp" data-aos="fade-up" data-aos-duration="500">welcome to my website</h4>
+                              <h1 class="animated fadeInUp" data-aos="fade-up" data-aos-duration="1000">Hello, I am <strong>Rence Abishek,</strong> <br>Software Engineer.</h1>
+                              <p class="animated fadeInUp" data-aos="fade-up" data-aos-duration="1500">
                                    I'm a Java full stack developer, being insquitive to know about the modern web technologies and playing around
                                    with that is my passion, Freelancing, 
                               </p>
                               
-                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
+                              <a href="#about"
+                              data-aos="fade-up" data-aos-duration="2000"
+                               class=" section-btn btn btn-success" >Get Started</a>
                               
                          </div>
                     </div>
@@ -104,11 +107,11 @@ http://www.templatemo.com/tm-498-stimulus
 
                <div class="col-md-6 col-sm-12">
                     <div class="about-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                         <div class="section-title" data-aos="fade-up" data-aos-duration="400">
                               <h1>Details...</h1>
                               <p class="color-yellow">Know more about me!</p>
                          </div>
-                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                         <div data-aos="fade-up" data-aos-duration="800">
                               <p>
                                    Freelancing, Contributing NGO / Non-Commercial Website development for the free of cost
                               </p>
@@ -569,9 +572,13 @@ http://www.templatemo.com/tm-498-stimulus
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
-<script src="js/smoothscroll.js"></script>
+<!-- <script src="js/smoothscroll.js"></script> -->
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/mediumpost.js"></script>
+<script src="js/aos.js"></script>
+<script>
+     AOS.init();
+   </script>
 </body>
 </html>

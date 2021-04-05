@@ -116,6 +116,7 @@ p {
 #service,
 #experience,
 #projects,
+#questions,
 #education,
 #blog,
 #contact {
@@ -126,6 +127,7 @@ p {
 #about .container, 
 #experience .container,
 #projects .container,
+#questions .container,
 #service .container,
 #education .container,
 #blog .container,
@@ -137,6 +139,7 @@ p {
 
 #experience .experience-thumb,
 #projects .projects-thumb,
+#questions .questions-thumb,
 #blog .blog-thumb,
 #education .education-thumb  {
   padding: 22px 42px 42px 42px;
@@ -153,6 +156,10 @@ footer {
 #blog,
 #education {
   background: #E9724C;
+}
+
+#questions {
+  background: #E3AE57;
 }
 
 .background-image {
@@ -579,6 +586,29 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
+    Questions section              
+-----------------------------------------*/
+
+#questions .questions-img {
+  background: url('../images/questions.png') no-repeat;
+}
+
+#questions .media-heading {
+  margin-bottom: 0px;
+}
+
+#questions .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#questions small {
+  color: #633;
+  font-weight: bold;
+}
+
+
+/*---------------------------------------
     Contact section              
 -----------------------------------------*/
 
@@ -734,6 +764,7 @@ footer {
   #about .container, 
   #experience .container,
   #projects .container,
+  #questions .container,
   #service .container,
   #education .container,
   #contact .container {
@@ -744,6 +775,7 @@ footer {
   #about .col-md-3,
   #experience .col-md-6,
   #projects .col-md-6,
+  #questions .col-md-6,
   #education .col-md-6,
   #contact .col-md-3 {
     padding: 0;
